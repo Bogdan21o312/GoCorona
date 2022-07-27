@@ -1,0 +1,30 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-block;
+	font-family: Raleway;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: rem(10);
+	line-height: 1.2;
+	letter-spacing: rem(1);
+	color: #fcfdfe;
+	padding: rem(14) rem(30);
+	border-radius: rem(5);
+	background-color: $redColor;
+	transition: background-color 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #f37a82;
+		}
+	}
+}
+.button_blue {
+	background-color: #4285f4;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #70a3f7;
+		}
+	}
+}

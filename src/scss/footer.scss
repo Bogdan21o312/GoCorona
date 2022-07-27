@@ -1,0 +1,25 @@
+//====================================================================================================
+
+.footer {
+    @include adaptiveValue("padding-top", 45, 30);
+    @include adaptiveValue("padding-bottom", 45, 20);
+    &__container {
+    }
+
+    &__items {
+        display: flex;
+        column-gap: rem(50);
+        row-gap: rem(20);
+        justify-content: center;
+        align-items: center;
+        @media (max-width: em(500)) {
+                flex-direction: column;
+        }
+        
+    }
+
+    &__item {
+    }
+}
+
+//====================================================================================================

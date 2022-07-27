@@ -1,0 +1,40 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.block-text {_
+    &:not(:last-child) {
+        margin: 0px 0px 24px 0px;
+    }
+    &__text {
+        line-height: 138.5%;
+        &:not(:last-child) {
+            margin: 0px 0px rem(24) 0px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        @include adaptiveValue("font-size", 44, 34);
+        line-height: 126%;
+        color: #000;
+        &:not(:last-child) {
+            margin: 0px 0px rem(12) 0px;
+        }
+        span {
+            color: $redColor;
+        }
+        &_blue {
+            span {
+            color: #4285f4;
+            }
+        }
+    }
+
+}
+.block-text_center {
+	text-align: center;
+}
+
+.block-text__text_mw {
+	max-width: 620px;
+	margin: 0px auto;
+}
